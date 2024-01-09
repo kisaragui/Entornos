@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  odoo-web:
+    build: .
+    container_name: odoo_local
+    restart: always
+    ports:
+      - "8069:8069"
+    depends_on:
+      - odoo-postgres
+    volumes:
+      - ./config/:/etc/odoo
+      - ./addons/:/mnt/extra-addons
+    environment:
+      - HOST=postgres_local
+      - USER=odoo
+      - PASSWORD=odoofop
+
+  odoo-postgres:
+    container_name: postgres_local
+    image: postgres:16
+    restart: always
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=odoofop
+      - POSTGRES_USER=odoo
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - db-data:/var/lib/postgresql/data/pgdata
+
+volumes:
+  db-data:
