@@ -3,6 +3,7 @@ services:
   odoo-web:
     build: .
     container_name: odoo_local
+    image: odoo:latest
     restart: always
     ports:
       - "8069:8069"
@@ -11,6 +12,7 @@ services:
     volumes:
       - ./config/:/etc/odoo
       - ./addons/:/mnt/extra-addons
+      - web-data:/var/lib/odoo
     environment:
       - HOST=postgres_local
       - USER=odoo
@@ -29,4 +31,5 @@ services:
       - db-data:/var/lib/postgresql/data/pgdata
 
 volumes:
+  web-data:
   db-data:
