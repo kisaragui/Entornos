@@ -1,2 +1,2 @@
 # -*- coding: utf-8 -*- 
-from . import ej_pet
+from . import pet_model

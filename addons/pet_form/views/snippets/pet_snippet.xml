@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+        <template id="pet_snippet_mini" inherit_id="website.snippets" name="Pet Form" priority="8">
+            <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+                <t t-snippet="pet_form.pet_form_view"/>
+            </xpath>
+        </template>
+
+        <template id="pet_form_view" name="Pet snippet">
+        <section class="pet_form_view" >
+            <div class="container">
+                <div class="row">
+                    <p>Hola!! ME ESTAS viendo!!!</p>
+                <div id="chart_view" style="width: 100px;height:100px;"></div>
+                </div>
+            </div>
+        </section>
+        </template>
+    </data>
+</odoo>

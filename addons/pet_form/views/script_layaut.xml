@@ -1,0 +1,10 @@
+<odoo>
+    <data>      
+        <template id="pet_snippet_header" inherit_id="website.layout" name="Pet view head" priority="9">
+            <xpath expr="//head" position="inside">
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+                <script type="text/javascript" src="/pet_form/static/src/js/piechart.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>
