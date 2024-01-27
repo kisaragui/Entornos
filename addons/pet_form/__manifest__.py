@@ -9,9 +9,8 @@
     'license': 'LGPL-3',
     'data': [
               'views/template_main.xml',
-              'views/script_layaut.xml',
+              'views/assets.xml',
               'views/snippets/pet_snippet.xml',
-              'security/ir.model.access.csv'
             ],
     'assets': {
         'web.assets_frontend': [
