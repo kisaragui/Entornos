@@ -1,0 +1,5 @@
+<odoo>
+    <template id="template_container" name="template main">
+        <t t-call="pet_form.pet_snippets" />
+    </template> 
+</odoo>

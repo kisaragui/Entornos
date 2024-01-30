@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<odoo>
-    <template id="snippet_container_template" name="snippet template">
-        <t t-call="graph_test.graph_snippet_mini" />
-    </template> 
-</odoo>
