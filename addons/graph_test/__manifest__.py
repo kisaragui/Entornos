@@ -10,10 +10,14 @@
     'data': [
               'views/container_template.xml',
               'views/snippets/graph_snippet.xml',
+              'views/snippets/graph_content.xml',
             ],
     'assets': {
-        'web.assets_custom': [
-            'graph_test/static/src/components/**/*',
+        'web.assets_qweb': [
+            'graph_test/static/src/components/**/*.xml',
+        ],
+        'web.assets_frontend': [
+            'graph_test/static/src/components/**/*.js',
         ],
     },
     'installable': True,

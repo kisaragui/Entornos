@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="barchart" name="graphcs">
+        <div class="container">
+            <div class="row">
+                <h3>Hola!! ME ESTAS viendo!!!</h3>
+               <!-- <div t-name="graph_test.BarChartComponent"></div>   -->
+               <div id="component">
+                    <BarChartComponent />
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

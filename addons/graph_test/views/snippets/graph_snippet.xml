@@ -10,10 +10,12 @@
         </template>
 
         <template id="graph_snippet_content" name="graph snippet">
-            <t t-call-assets="web.assets_custom"/>
             <section>
-                <t t-call="graph_test.graph_barchart" >
-                </t>
+            <div id="cualquiera">
+                        <t t-call="graph_test.barchart" >
+            </t>
+            </div>
+
             </section>
         </template>
     </data>

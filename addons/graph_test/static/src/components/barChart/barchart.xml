@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="graph_test.BarChart_x_Component" owl="1">
+        <div class="container">
+            <div class="row">
+                <h3>Hola!! SI TE ESTOY Viendo!!!</h3>
+            </div>
+        </div>
+    </t>
+</templates>
