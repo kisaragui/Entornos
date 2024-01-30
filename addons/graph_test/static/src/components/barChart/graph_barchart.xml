@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="graph_barchart">
+        <div class="container">
+            <div class="row">
+                <h3>Hola!! ME ESTAS viendo!!!</h3>
+               <t t-name="barchart" owl="1" />
+            </div>
+        </div>
+    </template>
+</odoo>
